@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #f6f7fb; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+img{
+    max-width: 100%;
+    display: block;
+    width: 150px;
+}
+i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+#hamburger{
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hided{
+    position: fixed;
+    inset: 0%;
+    height: 100%;
+    transform: translate(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+.black.hided{
+    background-color: rgb(34, 31, 31);
+    width: calc(30vw);
+    min-width: 290px;
+    transition-delay: 0.4s;
+}
+.red.hided{
+    background-color: red;
+    transition-delay: 0.2s;
+    margin-right: 1rem;
+}
+.white.hided{
+    background-color: white;
+    padding: 1.2rem;
+    margin-right: 1rem;
+    transition-delay: 0s;
+}
+.appear{
+    transform: translate(0);
+}
+.white.appear{
+    transition-delay: 0.4s;
+}
+.red.appear{
+    transition-delay: 0.2s;
+}
+.black.appear{
+    transition-delay: 0s;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin: 1.5rem;
+    font-size: 14px;
+    color:  rgb(34, 31, 31);
+
+}
+ul > ul{
+    padding-left: 1.5rem;
+}
+ul > ul li{
+    font-size: 12px;
+}
